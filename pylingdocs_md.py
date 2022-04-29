@@ -8,18 +8,16 @@ logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - 
 
 class PLDAutocomplete(sublime_plugin.EventListener):
 
-    data = None
+    data = None 
 
     def on_post_save(self, view):
-        window = view.window()
         current_dir = os.path.dirname(view.file_name())
         path = os.path.join(current_dir, ".pld_autocomplete.json")
         if os.path.isfile(path):
             self.data = json.load(open(path, "r"))
         else:
-            self.data = [("mp:there is no autocomplete data", "[mp](no_id!)")]
+            self.data = []
 
     def on_query_completions(self, view, prefix, locations):
-        logging.debug(str(view) + str(prefix) + str(locations))
-        logging.debug(self.data)
         return self.data
+        

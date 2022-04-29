@@ -29,12 +29,12 @@
                         [
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/pylingdocs_autocomplete/pylingdocs_autocomplete.sublime-settings"},
+                                "args": {"file": "${packages}/pylingdocs_autocomplete/pld-autocomplete.sublime-settings"},
                                 "caption": "Settings – Default"
                             },
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/User/pylingdocs_autocomplete.sublime-settings"},
+                                "args": {"file": "${packages}/User/pld-autocomplete.sublime-settings"},
                                 "caption": "Settings – User"
                             },
                             { "caption": "-" }
