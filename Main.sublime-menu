@@ -4,9 +4,13 @@
         "children":
         [
             {
-                "caption": "pylingdocs preview",
+                "caption": "pylingdocs",
                 "children":
                 [
+                    {
+                        "caption": "Insert entity",
+                        "command": "pld_choose"
+                    }
                 ]
             }
         ]
